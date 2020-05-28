@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { observer } from 'mobx-react';
+import appStore from './store/appStore';
+
+@observer class App extends Component() {
+  render() {
+    return (
+      <div className="App">
+        <h1>{this.props.store.userName}</h1>
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App store={appStore}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
