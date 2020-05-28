@@ -1,7 +1,9 @@
 import { observable } from 'mobx';
 
-const appStore = observable({
-  userName: 'New User'
-})
+class appStore {
+  @observable usersName = ['New User', 'New User2']
+}
 
-export default appStore;
+let store = new appStore;
+
+export default store;
