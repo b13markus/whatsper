@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ConversationList from '../ConversationList';
 import MessageList from '../MessageList';
 import './Messenger.css';
@@ -7,9 +7,11 @@ import ToolbarButton from '../ToolbarButton';
 import UserInfo from '../UserInfo/UserInfo';
 
 export default function Messenger(props) {
-    return (
-      <div className="messenger">
-        {/* <Toolbar
+  const [activeChat, setActiveChat] = useState();
+
+  return (
+    <div className="messenger">
+      {/* <Toolbar
           title="Messenger"
           leftItems={[
             <ToolbarButton key="cog" icon="ion-ios-cog" />
@@ -19,7 +21,7 @@ export default function Messenger(props) {
           ]}
         /> */}
 
-        {/* <Toolbar
+      {/* <Toolbar
           title="Conversation Title"
           rightItems={[
             <ToolbarButton key="info" icon="ion-ios-information-circle-outline" />,
@@ -28,15 +30,15 @@ export default function Messenger(props) {
           ]}
         /> */}
 
-        <div className="scrollable sidebar">
-          <ConversationList />
-        </div>
-
-        <div className="scrollable content">
-          <UserInfo />
-          <MessageList />
-          <Compose />
-        </div>
+      <div className="scrollable sidebar">
+        <ConversationList setActiveChat={setActiveChat}/>
       </div>
-    );
+
+      <div className="scrollable content">
+        <UserInfo activeChat={activeChat} />
+        <MessageList />
+        <Compose />
+      </div>
+    </div>
+  );
 }

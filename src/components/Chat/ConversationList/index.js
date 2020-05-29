@@ -22,6 +22,7 @@ export default function ConversationList(props) {
           text: c.text,
           status: c.status,
           convWith: 'Me',
+          phone: c.phone,
           isActive: false
         })
       })
@@ -30,8 +31,9 @@ export default function ConversationList(props) {
   }
 
   const handleActive = (element) => {
-    element.isActive = true
-    setConversations(conversations)
+    element.isActive = true;
+    setConversations(conversations);
+    props.setActiveChat(element);
   }
 
   return (

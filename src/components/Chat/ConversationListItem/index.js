@@ -22,8 +22,6 @@ export default function ConversationListItem(
     shave('.conversation-snippet', 20);
   })
 
-  console.log(data)
-
   return (
     <>
       <div
