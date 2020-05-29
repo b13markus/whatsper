@@ -1,0 +1,41 @@
+.top-bar-button {
+  width: 149px;
+  height: 71px;
+  background: #FAFAFA;
+  margin-right: 1px;
+  padding: 18px 0 0 24px;
+  font-family: SF UI Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  color: #565656;
+}
+
+.top-bar-button__title {
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  
+}
+
+.top-bar-button__title.bold {
+  font-weight: bold;
+}
+
+.top-bar-button__chats {
+  color: #898888;
+  font-weight: 600;
+}
+
+.top-bar-button__chats.active {
+  color: red;
+}
+
+.top-bar-button.active {
+  background: #FFFFFF;
+  border-bottom: 1px solid #0FB878;
+  color: #0FB878;
+}

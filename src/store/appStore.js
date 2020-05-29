@@ -20,6 +20,6 @@ class AppStore {
   }
 };
 
-let store = new AppStore();
+const store = new AppStore();
 
 export default store;
