@@ -2,7 +2,6 @@
   width: 149px;
   height: 71px;
   background: #FAFAFA;
-  margin-right: 1px;
   padding: 18px 0 0 24px;
   font-family: SF UI Text;
   font-style: normal;
@@ -12,6 +11,8 @@
   letter-spacing: -0.02em;
   cursor: pointer;
   color: #565656;
+  border-right: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
 }
 
 .top-bar-button__title {
