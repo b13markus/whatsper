@@ -1,9 +1,25 @@
-import { observable } from 'mobx';
+import { observable, action, configure } from 'mobx';
 
-class appStore {
-  @observable usersName = ['New User', 'New User2']
-}
+configure({ enforceActions: 'observed' });
 
-let store = new appStore;
+class AppStore {
+  @observable user = 's';
+
+  @action getUser() {
+    fetch('https://randomuser.me/api/')
+    .then(res => res.json())
+    .then(json => {
+      if(json.results) {
+        this.setUser(json.results);
+      }
+    })
+  }
+
+  @action setUser(results) {
+    this.user = results[0].name.first
+  }
+};
+
+let store = new AppStore();
 
 export default store;
