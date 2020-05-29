@@ -2,6 +2,9 @@ import React from 'react';
 import ConversationList from '../ConversationList';
 import MessageList from '../MessageList';
 import './Messenger.css';
+import Compose from '../Compose';
+import ToolbarButton from '../ToolbarButton';
+import UserInfo from '../UserInfo/UserInfo';
 
 export default function Messenger(props) {
     return (
@@ -30,7 +33,9 @@ export default function Messenger(props) {
         </div>
 
         <div className="scrollable content">
+          <UserInfo />
           <MessageList />
+          <Compose />
         </div>
       </div>
     );

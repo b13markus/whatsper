@@ -1,0 +1,38 @@
+.user-info {
+  background: #F0F0F0;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.user-info__data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.15px;
+  color: #666666;
+}
+
+.user-info__avatar {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.user-info__name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.33px;
+  color: #000000;
+}
