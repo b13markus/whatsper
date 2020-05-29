@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './MenuButton.css';
-import Logo from '../../../assets/logo.svg';
+import IconButton from '@material-ui/core/IconButton';
 
-class MenuButton extends Component {
+function MenuButton({ image }) {
 
-  render() {
-    return (
-      <div className="menu-button">
-        
-      </div>
-    );
-  }
+  return (
+    <div className="menu-button">
+      <IconButton color="primary">
+        {image}
+      </IconButton>
+    </div>
+  );
 }
 
 export default MenuButton;
