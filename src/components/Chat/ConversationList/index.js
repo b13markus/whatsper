@@ -21,19 +21,26 @@ export default function ConversationList(props) {
           name: c.firstName + ' ' + c.secondName,
           text: c.text,
           status: c.status,
-          convWith: 'Me'
+          convWith: 'Me',
+          isActive: false
         })
       })
     })
-    console.log(chat)
     setConversations([...chat])
   }
+
+  const handleActive = (element) => {
+    element.isActive = true
+    setConversations(conversations)
+  }
+
   return (
     <div className="conversation-list">
       <ConversationSearch/>
       {
         conversations.map(conversation =>
           <ConversationListItem
+            handleActive={handleActive}
             key={conversation.name}
             data={conversation}
           />
