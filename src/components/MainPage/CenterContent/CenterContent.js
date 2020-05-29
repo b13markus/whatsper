@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CenterContent.css';
+import Chat from '../../Chat/App';
 import TopSideBar from './TopSideBar/TopSideBar';
 
 class CenterContent extends Component {
@@ -8,6 +9,7 @@ class CenterContent extends Component {
     return (
       <div className="center-content">
         <TopSideBar />
+        <Chat/>
       </div>
     );
   }
