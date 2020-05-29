@@ -40,7 +40,8 @@ const users = [
         phone: '+972 50-327-0282',
         email: 'SamSamuel@gmail.com',
         status: 'pending',
-        isManager: false
+        isManager: false,
+        text: 'hello'
       },
       {
         firstName: 'John',
@@ -49,7 +50,8 @@ const users = [
         phone: '+922 40-323-0556',
         email: 'JohnLee@gmail.com',
         status: 'taken by',
-        isManager: false
+        isManager: false,
+        text: 'Hi'
       },
       {
         firstName: 'Sarah',
@@ -58,7 +60,8 @@ const users = [
         phone: '+972 10-111-2256',
         email: 'sarahParker@gmail.com',
         status: 'other',
-        isManager: false
+        isManager: false,
+        text: 'How are you'
       },
       {
         firstName: 'Tim',
@@ -67,7 +70,8 @@ const users = [
         phone: '+972 11-222-4444',
         email: 'timJones@gmail.com',
         status: 'solved',
-        isManager: false
+        isManager: false,
+        text: 'Thanks'
       },
       {
         firstName: 'Miley',
@@ -76,7 +80,8 @@ const users = [
         phone: '+972 88-666-1111',
         email: 'mileyJons@gmail.com',
         status: 'pending',
-        isManager: false
+        isManager: false,
+        text: 'See you tomorrow'
       },
     ]
   },

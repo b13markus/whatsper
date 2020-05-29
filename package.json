@@ -152,8 +152,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.2.3",
+    "axios": "^0.19.2",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
-    "mobx-react-devtools": "^6.0.3"
+    "mobx-react-devtools": "^6.0.3",
+    "moment": "^2.26.0",
+    "shave": "^2.5.9"
   }
 }
