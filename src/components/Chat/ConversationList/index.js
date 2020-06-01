@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import ConversationSearch from '../ConversationSearch';
 import ConversationListItem from '../ConversationListItem';
 import {users} from '../../../locale.db'
 import './ConversationList.css';
-import {set} from "mobx";
 
 export default function ConversationList(props) {
   const [conversations, setConversations] = useState([]);
@@ -19,11 +18,12 @@ export default function ConversationList(props) {
         chat.push({
           photo: c.avatar,
           name: c.firstName + ' ' + c.secondName,
-          text: c.text,
+          text: c.chat[c.chat.length - 1].message,
           status: c.status,
           convWith: 'Me',
           phone: c.phone,
-          isActive: false
+          isActive: false,
+          chat: c.chat
         })
       })
     })
@@ -31,6 +31,7 @@ export default function ConversationList(props) {
   }
 
   const handleActive = (element) => {
+    conversations.map(c => c.isActive = false)
     element.isActive = true;
     setConversations(conversations);
     props.setActiveChat(element);
@@ -39,15 +40,13 @@ export default function ConversationList(props) {
   return (
     <div className="conversation-list">
       <ConversationSearch/>
-      {
-        conversations.map(conversation =>
-          <ConversationListItem
-            handleActive={handleActive}
-            key={conversation.name}
-            data={conversation}
-          />
-        )
-      }
+      {conversations.map(conversation =>
+        <ConversationListItem
+          handleActive={handleActive}
+          key={conversation.name}
+          data={conversation}
+        />
+      )}
     </div>
   );
 }

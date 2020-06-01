@@ -20,7 +20,7 @@ export default function ConversationListItem(
 
   useEffect(() => {
     shave('.conversation-snippet', 20);
-  })
+  }, [])
 
   return (
     <>

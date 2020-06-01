@@ -41,7 +41,32 @@ const users = [
         email: 'SamSamuel@gmail.com',
         status: 'pending',
         isManager: false,
-        text: 'hello'
+        chat: [
+          {
+            id: 1,
+            author: 'Oleksandr',
+            message: 'Hi Sam! How are you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 2,
+            author: 'Sam',
+            message: 'Hello Oleksandr!',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Sam',
+            message: 'I am fine. Thanks',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 4,
+            author: 'Sam',
+            message: 'What about you?',
+            timestamp: new Date().getTime()
+          }
+        ]
       },
       {
         firstName: 'John',
@@ -51,7 +76,32 @@ const users = [
         email: 'JohnLee@gmail.com',
         status: 'taken by',
         isManager: false,
-        text: 'Hi'
+        chat: [
+          {
+            id: 1,
+            author: 'Oleksandr',
+            message: 'Hi John! How are you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 2,
+            author: 'Sam',
+            message: 'Hello Oleksandr!',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Sam',
+            message: 'I am fine. Thanks',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 4,
+            author: 'Sam',
+            message: 'How are you?',
+            timestamp: new Date().getTime()
+          }
+        ]
       },
       {
         firstName: 'Sarah',
@@ -61,7 +111,38 @@ const users = [
         email: 'sarahParker@gmail.com',
         status: 'other',
         isManager: false,
-        text: 'How are you'
+        chat: [
+          {
+            id: 1,
+            author: 'Oleksandr',
+            message: 'Hello Sarah! How are you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 2,
+            author: 'Sarah',
+            message: 'Hi Oleksandr!',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Sarah',
+            message: 'I am fine. Thanks',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Sarah',
+            message: 'What about you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 4,
+            author: 'Oleksandr',
+            message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            timestamp: new Date().getTime()
+          },
+        ]
       },
       {
         firstName: 'Tim',
@@ -71,7 +152,32 @@ const users = [
         email: 'timJones@gmail.com',
         status: 'solved',
         isManager: false,
-        text: 'Thanks'
+        chat: [
+          {
+            id: 1,
+            author: 'Oleksandr',
+            message: 'Hi Tim! How are you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 2,
+            author: 'Tim',
+            message: 'Hello Oleksandr!',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Tim',
+            message: 'I am fine. Thanks',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 4,
+            author: 'Oleksandr',
+            message: 'I am fine too:)',
+            timestamp: new Date().getTime()
+          }
+        ]
       },
       {
         firstName: 'Miley',
@@ -81,7 +187,38 @@ const users = [
         email: 'mileyJons@gmail.com',
         status: 'pending',
         isManager: false,
-        text: 'See you tomorrow'
+        chat: [
+          {
+            id: 1,
+            author: 'Oleksandr',
+            message: 'Hi Miley! How are you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 2,
+            author: 'Miley',
+            message: 'Hello Oleksandr!',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 3,
+            author: 'Miley',
+            message: 'I am fine. Thanks',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 4,
+            author: 'Miley',
+            message: 'What about you?',
+            timestamp: new Date().getTime()
+          },
+          {
+            id: 5,
+            author: 'Miley',
+            message: '???',
+            timestamp: new Date().getTime()
+          }
+        ]
       },
     ]
   },

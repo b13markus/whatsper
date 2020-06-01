@@ -24,6 +24,11 @@
   padding: 0 20px;
 }
 
+/*.MuiInput-underline:after,*/
+/*.MuiInput-underline:before{*/
+/*  display: none !important;*/
+/*}*/
+
 .compose-input::placeholder {
   opacity: 0.3;
 }
