@@ -1,17 +1,18 @@
 import React from 'react';
 import './TopBarBotton.css';
 
-function TopBarBotton({ title, numberOfChats, bold, active}) {
+function TopBarBotton({ title, numberOfChats, bold, setActiveChat, activeChat}) {
 
   return (
     <div
       className={
-        active
+        activeChat === title
         ?
           "top-bar-button active"
         :
           "top-bar-button"
       }
+      onClick={() => {setActiveChat(title)}}
     >
       <h1
         className={
@@ -24,7 +25,7 @@ function TopBarBotton({ title, numberOfChats, bold, active}) {
       >{title}</h1>
       <div
         className={
-          active || bold
+          bold || activeChat === title
           ?
             "top-bar-button__chats active"
           :
